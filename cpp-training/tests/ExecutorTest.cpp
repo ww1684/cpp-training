@@ -71,7 +71,7 @@ namespace adas
         // when
         executor->Execute("M");
         // then
-        const Pose target({-1, 0, 'S'});
+        const Pose target({0, -1, 'S'});
         ASSERT_EQ(target, executor->Query());
     }
 }// namespace adas
