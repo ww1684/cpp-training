@@ -1,4 +1,5 @@
 #include "ExecutorImpl.hpp"
+#include <memory>
 namespace adas
 {
     Executor* Executor::NewExecutor(const Pose& pose) noexcept
@@ -36,7 +37,8 @@ namespace adas
                 }
                 else
                 {
-                    Move();
+                    std::unique_ptr<MoveCommand> cmder = std::make_unique<MoveCommand>();
+                    cmder->DoOperate(*this);
                 }
             }
 
@@ -60,7 +62,8 @@ namespace adas
                 }
                 else 
                 {
-                    TurnLeft();
+                    std::unique_ptr<TurnLeftCommand> cmder = std::make_unique<TurnLeftCommand>();
+                    cmder->DoOperate(*this);
                 }
             }
 
@@ -83,7 +86,8 @@ namespace adas
                 }
                 else
                 {
-                    TurnRight();
+                    std::unique_ptr<TurnRightCommand> cmder = std::make_unique<TurnRightCommand>();
+                    cmder->DoOperate(*this);
                 }
             }
         }
