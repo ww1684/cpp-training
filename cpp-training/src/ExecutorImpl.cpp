@@ -8,69 +8,89 @@ namespace adas
     ExecutorImpl::ExecutorImpl(const Pose& pose) noexcept : pose(pose)
     {
     }
+
+
     void ExecutorImpl::Execute(const std::string& commands) noexcept
     {
         for (const auto cmd : commands) {
+
+            //定义bool型变量存储加速特征
+            bool isFast=false;
+            if(cmd=='F'){
+                isFast=(!isFast);
+            }
+
             if (cmd == 'M')
             {
-                if (pose.heading == 'E')
+                if(isFast)
                 {
-                    ++pose.x;
+                    if (pose.heading == 'E') {
+                        pose.x+=2;
+                    } else if (pose.heading == 'W') {
+                        pose.x-=2;
+                    } else if (pose.heading == 'N') {
+                        pose.y+=2;
+                    } else if (pose.heading == 'S') {
+                        pose.y-=2;
+                    }
                 }
-                else if (pose.heading == 'W')
+                else
                 {
-                    --pose.x;
-                }
-                else if (pose.heading == 'N')
-                {
-                    ++pose.y;
-                }
-                else if (pose.heading == 'S')
-                {
-                    --pose.y;
+                    Move();
                 }
             }
+
             else if (cmd == 'L')
             {
-                if (pose.heading == 'E')
+                if(isFast)
                 {
-                    pose.heading = 'N';
+                    if (pose.heading == 'E') {
+                        ++pose.x;
+                        pose.heading = 'N';
+                    } else if (pose.heading == 'N') {
+                        ++pose.y;
+                        pose.heading = 'W';
+                    } else if (pose.heading == 'W') {
+                        --pose.x;
+                        pose.heading = 'S';
+                    } else if (pose.heading == 'S') {
+                        --pose.y;
+                        pose.heading = 'E';
+                    }
                 }
-                else if (pose.heading == 'N')
+                else 
                 {
-                    pose.heading = 'W';
-                }
-                else if (pose.heading == 'W')
-                {
-                    pose.heading = 'S';
-                }
-                else if (pose.heading == 'S')
-                {
-                    pose.heading = 'E';
+                    TurnLeft();
                 }
             }
+
             else if (cmd == 'R') {
-                if (pose.heading == 'E')
+                if(isFast)
                 {
-                    pose.heading = 'S';
+                    if (pose.heading == 'E') {
+                        ++pose.x;
+                        pose.heading = 'S';
+                    } else if (pose.heading == 'S') {
+                        --pose.y;
+                        pose.heading = 'W';
+                    } else if (pose.heading == 'W') {
+                        --pose.x;
+                        pose.heading = 'N';
+                    } else if (pose.heading == 'N') {
+                        ++pose.y;
+                        pose.heading = 'E';
+                    }
                 }
-                else if (pose.heading == 'S')
+                else
                 {
-                    pose.heading = 'W';
-                }
-                else if (pose.heading == 'W')
-                {
-                    pose.heading = 'N';
-                }
-                else if (pose.heading == 'N')
-                {
-                    pose.heading = 'E';
+                    TurnRight();
                 }
             }
         }
     }
-            Pose ExecutorImpl::Query() const noexcept
-            {
-                return pose;
-            }
-        }  // namespace adas
+    Pose ExecutorImpl::Query() const noexcept
+    {
+        return pose;
+    }
+
+}  // namespace adas
