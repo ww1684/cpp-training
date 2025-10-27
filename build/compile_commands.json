@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/workspace/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -Wall -Werror -o CMakeFiles\\training.dir\\ExecutorImpl.cpp.obj -c C:\\workspace\\cpp-training\\src\\ExecutorImpl.cpp",
+  "file": "C:/workspace/cpp-training/src/ExecutorImpl.cpp",
+  "output": "src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\ExecutorTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\ExecutorTest.cpp",
+  "file": "C:/workspace/cpp-training/tests/ExecutorTest.cpp",
+  "output": "tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests/googletest/googletest",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\workspace\\cpp-training\\tests\\googletest\\googletest\\src\\gtest-all.cc",
+  "file": "C:/workspace/cpp-training/tests/googletest/googletest/src/gtest-all.cc",
+  "output": "tests/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "C:/workspace/build/tests/googletest/googletest",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\workspace\\cpp-training\\tests\\googletest\\googletest\\src\\gtest_main.cc",
+  "file": "C:/workspace/cpp-training/tests/googletest/googletest/src/gtest_main.cc",
+  "output": "tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+}
+]

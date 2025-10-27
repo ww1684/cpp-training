@@ -1,0 +1,1 @@
+-I"C:/workspace/cpp-training/include" -isystem "C:/workspace/cpp-training/tests/googletest/googletest/include" -isystem "C:/workspace/cpp-training/tests/googletest/googletest"
