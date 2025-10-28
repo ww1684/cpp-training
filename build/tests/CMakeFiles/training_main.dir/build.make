@@ -71,11 +71,26 @@ include tests/CMakeFiles/training_main.dir/flags.make
 tests/CMakeFiles/training_main.dir/codegen:
 .PHONY : tests/CMakeFiles/training_main.dir/codegen
 
+tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj: tests/CMakeFiles/training_main.dir/flags.make
+tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj: tests/CMakeFiles/training_main.dir/includes_CXX.rsp
+tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj: C:/workspace/cpp-training/tests/ExecutorFastTest.cpp
+tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj: tests/CMakeFiles/training_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj"
+	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj -MF CMakeFiles\training_main.dir\ExecutorFastTest.cpp.obj.d -o CMakeFiles\training_main.dir\ExecutorFastTest.cpp.obj -c C:\workspace\cpp-training\tests\ExecutorFastTest.cpp
+
+tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training_main.dir/ExecutorFastTest.cpp.i"
+	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\workspace\cpp-training\tests\ExecutorFastTest.cpp > CMakeFiles\training_main.dir\ExecutorFastTest.cpp.i
+
+tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training_main.dir/ExecutorFastTest.cpp.s"
+	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\cpp-training\tests\ExecutorFastTest.cpp -o CMakeFiles\training_main.dir\ExecutorFastTest.cpp.s
+
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: tests/CMakeFiles/training_main.dir/flags.make
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: tests/CMakeFiles/training_main.dir/includes_CXX.rsp
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: C:/workspace/cpp-training/tests/ExecutorTest.cpp
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: tests/CMakeFiles/training_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
 	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj -MF CMakeFiles\training_main.dir\ExecutorTest.cpp.obj.d -o CMakeFiles\training_main.dir\ExecutorTest.cpp.obj -c C:\workspace\cpp-training\tests\ExecutorTest.cpp
 
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.i: cmake_force
@@ -86,14 +101,33 @@ tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training_main.dir/ExecutorTest.cpp.s"
 	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\cpp-training\tests\ExecutorTest.cpp -o CMakeFiles\training_main.dir\ExecutorTest.cpp.s
 
+tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj: tests/CMakeFiles/training_main.dir/flags.make
+tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj: tests/CMakeFiles/training_main.dir/includes_CXX.rsp
+tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj: C:/workspace/cpp-training/tests/PoseEq.cpp
+tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj: tests/CMakeFiles/training_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj"
+	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj -MF CMakeFiles\training_main.dir\PoseEq.cpp.obj.d -o CMakeFiles\training_main.dir\PoseEq.cpp.obj -c C:\workspace\cpp-training\tests\PoseEq.cpp
+
+tests/CMakeFiles/training_main.dir/PoseEq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training_main.dir/PoseEq.cpp.i"
+	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\workspace\cpp-training\tests\PoseEq.cpp > CMakeFiles\training_main.dir\PoseEq.cpp.i
+
+tests/CMakeFiles/training_main.dir/PoseEq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training_main.dir/PoseEq.cpp.s"
+	cd /d C:\workspace\build\tests && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\cpp-training\tests\PoseEq.cpp -o CMakeFiles\training_main.dir\PoseEq.cpp.s
+
 # Object files for target training_main
 training_main_OBJECTS = \
-"CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
+"CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj" \
+"CMakeFiles/training_main.dir/ExecutorTest.cpp.obj" \
+"CMakeFiles/training_main.dir/PoseEq.cpp.obj"
 
 # External object files for target training_main
 training_main_EXTERNAL_OBJECTS =
 
+tests/training_main.exe: tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj
+tests/training_main.exe: tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/build.make
 tests/training_main.exe: src/libtraining.a
 tests/training_main.exe: lib/libgtest_main.a
@@ -101,7 +135,7 @@ tests/training_main.exe: lib/libgtest.a
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/linkLibs.rsp
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/objects1.rsp
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\workspace\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable training_main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\workspace\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable training_main.exe"
 	cd /d C:\workspace\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\training_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

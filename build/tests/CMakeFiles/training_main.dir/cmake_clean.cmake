@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj"
+  "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj.d"
+  "CMakeFiles/training_main.dir/PoseEq.cpp.obj"
+  "CMakeFiles/training_main.dir/PoseEq.cpp.obj.d"
   "libtraining_main.dll.a"
   "training_main.exe"
   "training_main.exe.manifest"

@@ -1,5 +1,6 @@
 #include "ExecutorImpl.hpp"
 #include <memory>
+
 namespace adas
 {
     Executor* Executor::NewExecutor(const Pose& pose) noexcept
@@ -10,88 +11,25 @@ namespace adas
     {
     }
 
-
     void ExecutorImpl::Execute(const std::string& commands) noexcept
     {
         for (const auto cmd : commands) {
 
-            //定义bool型变量存储加速特征
-            bool isFast=false;
-            if(cmd=='F'){
-                isFast=(!isFast);
-            }
+            std::unique_ptr<ICommand> cmder;
 
-            if (cmd == 'M')
-            {
-                if(isFast)
-                {
-                    if (pose.heading == 'E') {
-                        pose.x+=2;
-                    } else if (pose.heading == 'W') {
-                        pose.x-=2;
-                    } else if (pose.heading == 'N') {
-                        pose.y+=2;
-                    } else if (pose.heading == 'S') {
-                        pose.y-=2;
-                    }
-                }
-                else
-                {
-                    std::unique_ptr<MoveCommand> cmder = std::make_unique<MoveCommand>();
-                    cmder->DoOperate(*this);
-                }
+            if (cmd == 'M') {
+                cmder = std::make_unique<MoveCommand>();
+            } else if (cmd == 'L') {
+                cmder = std::make_unique<TurnLeftCommand>();
+            } else if (cmd == 'R') {
+                cmder = std::make_unique<TurnRightCommand>();
             }
-
-            else if (cmd == 'L')
-            {
-                if(isFast)
-                {
-                    if (pose.heading == 'E') {
-                        ++pose.x;
-                        pose.heading = 'N';
-                    } else if (pose.heading == 'N') {
-                        ++pose.y;
-                        pose.heading = 'W';
-                    } else if (pose.heading == 'W') {
-                        --pose.x;
-                        pose.heading = 'S';
-                    } else if (pose.heading == 'S') {
-                        --pose.y;
-                        pose.heading = 'E';
-                    }
-                }
-                else 
-                {
-                    std::unique_ptr<TurnLeftCommand> cmder = std::make_unique<TurnLeftCommand>();
-                    cmder->DoOperate(*this);
-                }
+            if(cmder){
+                cmder->DoOperate(*this);
             }
-
-            else if (cmd == 'R') {
-                if(isFast)
-                {
-                    if (pose.heading == 'E') {
-                        ++pose.x;
-                        pose.heading = 'S';
-                    } else if (pose.heading == 'S') {
-                        --pose.y;
-                        pose.heading = 'W';
-                    } else if (pose.heading == 'W') {
-                        --pose.x;
-                        pose.heading = 'N';
-                    } else if (pose.heading == 'N') {
-                        ++pose.y;
-                        pose.heading = 'E';
-                    }
-                }
-                else
-                {
-                    std::unique_ptr<TurnRightCommand> cmder = std::make_unique<TurnRightCommand>();
-                    cmder->DoOperate(*this);
-                }
             }
         }
-    }
+
     Pose ExecutorImpl::Query() const noexcept
     {
         return pose;

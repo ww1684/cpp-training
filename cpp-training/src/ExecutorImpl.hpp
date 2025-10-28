@@ -15,16 +15,24 @@ public:
     Pose Query(void) const noexcept override;
 
 private:
+    class ICommand
+    {
+    public:
+        virtual ~ICommand() = default;
+        virtual void DoOperate(ExecutorImpl& executor) const noexcept = 0;
+    };
+
+private:
     Pose pose;
     void Move(void) noexcept
     {
-        if (pose.heading == 'E'){
+        if (pose.heading == 'E') {
             ++pose.x;
-        } else if (pose.heading == 'W'){
+        } else if (pose.heading == 'W') {
             --pose.x;
-        } else if (pose.heading == 'N'){
+        } else if (pose.heading == 'N') {
             ++pose.y;
-        } else if (pose.heading == 'S'){
+        } else if (pose.heading == 'S') {
             --pose.y;
         }
     }
@@ -55,25 +63,31 @@ private:
         }
     }
 
-    class MoveCommand final{
-        public :
-        void DoOperate(ExecutorImpl & executor) const noexcept{
+    class MoveCommand final : public ICommand
+    {
+    public:
+        void DoOperate(ExecutorImpl& executor) const noexcept
+        {
             executor.Move();
-            }
+        }
     };
 
-    class TurnLeftCommand final{
-        public:
-        void DoOperate(ExecutorImpl& executor) const noexcept{
+    class TurnLeftCommand final : public ICommand
+    {
+    public:
+        void DoOperate(ExecutorImpl& executor) const noexcept
+        {
             executor.TurnLeft();
-            }
+        }
     };
 
-    class TurnRightCommand final{
-        public:
-        void DoOperate(ExecutorImpl& executor) const noexcept{
+    class TurnRightCommand final : public ICommand
+    {
+    public:
+        void DoOperate(ExecutorImpl& executor) const noexcept
+        {
             executor.TurnRight();
-            }
+        }
     };
 };
 };

@@ -184,6 +184,30 @@ training_main/fast:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/build
 .PHONY : training_main/fast
 
+ExecutorFastTest.obj: ExecutorFastTest.cpp.obj
+.PHONY : ExecutorFastTest.obj
+
+# target to build an object file
+ExecutorFastTest.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj
+.PHONY : ExecutorFastTest.cpp.obj
+
+ExecutorFastTest.i: ExecutorFastTest.cpp.i
+.PHONY : ExecutorFastTest.i
+
+# target to preprocess a source file
+ExecutorFastTest.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.i
+.PHONY : ExecutorFastTest.cpp.i
+
+ExecutorFastTest.s: ExecutorFastTest.cpp.s
+.PHONY : ExecutorFastTest.s
+
+# target to generate assembly for a file
+ExecutorFastTest.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.s
+.PHONY : ExecutorFastTest.cpp.s
+
 ExecutorTest.obj: ExecutorTest.cpp.obj
 .PHONY : ExecutorTest.obj
 
@@ -208,6 +232,30 @@ ExecutorTest.cpp.s:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.s
 .PHONY : ExecutorTest.cpp.s
 
+PoseEq.obj: PoseEq.cpp.obj
+.PHONY : PoseEq.obj
+
+# target to build an object file
+PoseEq.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj
+.PHONY : PoseEq.cpp.obj
+
+PoseEq.i: PoseEq.cpp.i
+.PHONY : PoseEq.i
+
+# target to preprocess a source file
+PoseEq.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PoseEq.cpp.i
+.PHONY : PoseEq.cpp.i
+
+PoseEq.s: PoseEq.cpp.s
+.PHONY : PoseEq.s
+
+# target to generate assembly for a file
+PoseEq.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PoseEq.cpp.s
+.PHONY : PoseEq.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -222,9 +270,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training_main
+	@echo ... ExecutorFastTest.obj
+	@echo ... ExecutorFastTest.i
+	@echo ... ExecutorFastTest.s
 	@echo ... ExecutorTest.obj
 	@echo ... ExecutorTest.i
 	@echo ... ExecutorTest.s
+	@echo ... PoseEq.obj
+	@echo ... PoseEq.i
+	@echo ... PoseEq.s
 .PHONY : help
 
 

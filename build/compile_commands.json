@@ -7,9 +7,21 @@
 },
 {
   "directory": "C:/workspace/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\ExecutorFastTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\ExecutorFastTest.cpp",
+  "file": "C:/workspace/cpp-training/tests/ExecutorFastTest.cpp",
+  "output": "tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\ExecutorTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\ExecutorTest.cpp",
   "file": "C:/workspace/cpp-training/tests/ExecutorTest.cpp",
   "output": "tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\PoseEq.cpp.obj -c C:\\workspace\\cpp-training\\tests\\PoseEq.cpp",
+  "file": "C:/workspace/cpp-training/tests/PoseEq.cpp",
+  "output": "tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj"
 },
 {
   "directory": "C:/workspace/build/tests/googletest/googletest",
