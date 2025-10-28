@@ -1,5 +1,6 @@
 #include "ExecutorImpl.hpp"
 #include <memory>
+#include "Command.hpp"
 
 namespace adas
 {
@@ -26,7 +27,7 @@ namespace adas
             } else if(cmd=='F'){
                 cmder=std::make_unique<FastCommand>();
             }
-            
+
             if(cmder){
                 cmder->DoOperate(*this);
             }
