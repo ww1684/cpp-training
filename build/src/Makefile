@@ -208,6 +208,30 @@ ExecutorImpl.cpp.s:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.s
 .PHONY : ExecutorImpl.cpp.s
 
+PoseHandler.obj: PoseHandler.cpp.obj
+.PHONY : PoseHandler.obj
+
+# target to build an object file
+PoseHandler.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/PoseHandler.cpp.obj
+.PHONY : PoseHandler.cpp.obj
+
+PoseHandler.i: PoseHandler.cpp.i
+.PHONY : PoseHandler.i
+
+# target to preprocess a source file
+PoseHandler.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/PoseHandler.cpp.i
+.PHONY : PoseHandler.cpp.i
+
+PoseHandler.s: PoseHandler.cpp.s
+.PHONY : PoseHandler.s
+
+# target to generate assembly for a file
+PoseHandler.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/PoseHandler.cpp.s
+.PHONY : PoseHandler.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -225,6 +249,9 @@ help:
 	@echo ... ExecutorImpl.obj
 	@echo ... ExecutorImpl.i
 	@echo ... ExecutorImpl.s
+	@echo ... PoseHandler.obj
+	@echo ... PoseHandler.i
+	@echo ... PoseHandler.s
 .PHONY : help
 
 

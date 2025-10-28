@@ -97,15 +97,15 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "training::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "gtest_main::@d4fc0889495972d29720"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "gtest::@d4fc0889495972d29720"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "training::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "training_main::@a44f0ac069e85531cdee",

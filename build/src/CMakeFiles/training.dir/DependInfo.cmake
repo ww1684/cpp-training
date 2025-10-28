@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/workspace/cpp-training/src/ExecutorImpl.cpp" "src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj" "gcc" "src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj.d"
+  "C:/workspace/cpp-training/src/PoseHandler.cpp" "src/CMakeFiles/training.dir/PoseHandler.cpp.obj" "gcc" "src/CMakeFiles/training.dir/PoseHandler.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

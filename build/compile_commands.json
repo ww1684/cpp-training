@@ -6,6 +6,12 @@
   "output": "src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj"
 },
 {
+  "directory": "C:/workspace/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -Wall -Werror -o CMakeFiles\\training.dir\\PoseHandler.cpp.obj -c C:\\workspace\\cpp-training\\src\\PoseHandler.cpp",
+  "file": "C:/workspace/cpp-training/src/PoseHandler.cpp",
+  "output": "src/CMakeFiles/training.dir/PoseHandler.cpp.obj"
+},
+{
   "directory": "C:/workspace/build/tests",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\ExecutorFastTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\ExecutorFastTest.cpp",
   "file": "C:/workspace/cpp-training/tests/ExecutorFastTest.cpp",

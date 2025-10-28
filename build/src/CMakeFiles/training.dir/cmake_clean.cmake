@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/training.dir/ExecutorImpl.cpp.obj"
   "CMakeFiles/training.dir/ExecutorImpl.cpp.obj.d"
+  "CMakeFiles/training.dir/PoseHandler.cpp.obj"
+  "CMakeFiles/training.dir/PoseHandler.cpp.obj.d"
   "libtraining.a"
   "libtraining.pdb"
 )
