@@ -24,6 +24,8 @@ private:
 
 private:
     Pose pose;
+    bool fast{false};
+
     void Move(void) noexcept
     {
         if (pose.heading == 'E') {
@@ -63,11 +65,24 @@ private:
         }
     }
 
+    void Fast() noexcept
+    {
+        fast = !fast;
+    }
+
+    bool IsFast() const noexcept
+    {
+        return fast;
+    }
+
     class MoveCommand final : public ICommand
     {
     public:
         void DoOperate(ExecutorImpl& executor) const noexcept
         {
+            if (executor.IsFast()) {
+                executor.Move();
+            }
             executor.Move();
         }
     };
@@ -77,6 +92,9 @@ private:
     public:
         void DoOperate(ExecutorImpl& executor) const noexcept
         {
+            if (executor.IsFast()) {
+                executor.Move();
+            }
             executor.TurnLeft();
         }
     };
@@ -86,7 +104,19 @@ private:
     public:
         void DoOperate(ExecutorImpl& executor) const noexcept
         {
+            if (executor.IsFast()) {
+                executor.Move();
+            }
             executor.TurnRight();
+        }
+    };
+
+    class FastCommand final : public ICommand
+    {
+    public:
+        void DoOperate(ExecutorImpl& executor) const noexcept override
+        {
+            executor.Fast();
         }
     };
 };

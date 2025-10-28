@@ -23,7 +23,10 @@ namespace adas
                 cmder = std::make_unique<TurnLeftCommand>();
             } else if (cmd == 'R') {
                 cmder = std::make_unique<TurnRightCommand>();
+            } else if(cmd=='F'){
+                cmder=std::make_unique<FastCommand>();
             }
+            
             if(cmder){
                 cmder->DoOperate(*this);
             }
