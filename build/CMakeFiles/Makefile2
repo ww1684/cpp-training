@@ -197,8 +197,8 @@ src/CMakeFiles/training.dir/clean:
 
 # All Build rule for target.
 tests/CMakeFiles/training_main.dir/all: src/CMakeFiles/training.dir/all
-tests/CMakeFiles/training_main.dir/all: tests/googletest/googletest/CMakeFiles/gtest_main.dir/all
 tests/CMakeFiles/training_main.dir/all: tests/googletest/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/training_main.dir/all: tests/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\workspace\build\CMakeFiles --progress-num=8,9,10,11 "Built target training_main"

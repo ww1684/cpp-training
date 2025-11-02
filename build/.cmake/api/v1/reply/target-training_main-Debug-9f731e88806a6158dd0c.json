@@ -101,11 +101,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@d4fc0889495972d29720"
+			"id" : "gtest::@d4fc0889495972d29720"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@d4fc0889495972d29720"
+			"id" : "gtest_main::@d4fc0889495972d29720"
 		}
 	],
 	"id" : "training_main::@a44f0ac069e85531cdee",

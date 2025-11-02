@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="(empty)"
-	BuildStamp="20251028-1214-Experimental"
+	BuildStamp="20251102-0624-Experimental"
 	Name="(empty)"
 	Generator="ctest-3.31.0"
 	CompilerName=""
@@ -8,7 +8,7 @@
 	OSName="Windows"
 	Hostname="LAPTOP-IHAUU17F"
 	OSRelease=" Personal"
-	OSVersion=" (Build 22631)"
+	OSVersion=" (Build 26100)"
 	OSPlatform="AMD64"
 	Is64Bits="1"
 	VendorString="GenuineIntel"
@@ -19,17 +19,17 @@
 	ProcessorCacheSize="-1"
 	NumberOfLogicalCPU="24"
 	NumberOfPhysicalCPU="16"
-	TotalVirtualMemory="18073"
+	TotalVirtualMemory="15767"
 	TotalPhysicalMemory="14039"
 	LogicalProcessorsPerPhysical="1"
 	ProcessorClockFrequency="2419"
 	>
 	<Testing>
-		<StartDateTime>Oct 28 22:13 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1761660810</StartTestTime>
+		<StartDateTime>Nov 02 14:35 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1762065359</StartTestTime>
 		<TestList/>
-		<EndDateTime>Oct 28 22:13 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1761660810</EndTestTime>
+		<EndDateTime>Nov 02 14:35 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1762065359</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
