@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/workspace/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -Wall -Werror -o CMakeFiles\\training.dir\\CmderFactory.cpp.obj -c C:\\workspace\\cpp-training\\src\\CmderFactory.cpp",
+  "file": "C:/workspace/cpp-training/src/CmderFactory.cpp",
+  "output": "src/CMakeFiles/training.dir/CmderFactory.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/src",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -Wall -Werror -o CMakeFiles\\training.dir\\ExecutorImpl.cpp.obj -c C:\\workspace\\cpp-training\\src\\ExecutorImpl.cpp",
   "file": "C:/workspace/cpp-training/src/ExecutorImpl.cpp",
   "output": "src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj"
@@ -13,9 +19,21 @@
 },
 {
   "directory": "C:/workspace/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\BusTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\BusTest.cpp",
+  "file": "C:/workspace/cpp-training/tests/BusTest.cpp",
+  "output": "tests/CMakeFiles/training_main.dir/BusTest.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\ExecutorFastTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\ExecutorFastTest.cpp",
   "file": "C:/workspace/cpp-training/tests/ExecutorFastTest.cpp",
   "output": "tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\ExecutorReverseTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\ExecutorReverseTest.cpp",
+  "file": "C:/workspace/cpp-training/tests/ExecutorReverseTest.cpp",
+  "output": "tests/CMakeFiles/training_main.dir/ExecutorReverseTest.cpp.obj"
 },
 {
   "directory": "C:/workspace/build/tests",
@@ -28,6 +46,12 @@
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\PoseEq.cpp.obj -c C:\\workspace\\cpp-training\\tests\\PoseEq.cpp",
   "file": "C:/workspace/cpp-training/tests/PoseEq.cpp",
   "output": "tests/CMakeFiles/training_main.dir/PoseEq.cpp.obj"
+},
+{
+  "directory": "C:/workspace/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/training_main.dir/includes_CXX.rsp -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -std=gnu++17 -o CMakeFiles\\training_main.dir\\SportscarTest.cpp.obj -c C:\\workspace\\cpp-training\\tests\\SportscarTest.cpp",
+  "file": "C:/workspace/cpp-training/tests/SportscarTest.cpp",
+  "output": "tests/CMakeFiles/training_main.dir/SportscarTest.cpp.obj"
 },
 {
   "directory": "C:/workspace/build/tests/googletest/googletest",

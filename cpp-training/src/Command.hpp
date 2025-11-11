@@ -33,16 +33,23 @@ public:
     {
         if (poseHandler.IsFast()) {
             if (poseHandler.IsReverse()) {
-                poseHandler.Backward();
+                poseHandler.PoseHandler::Backward();
             } else {
-                poseHandler.Forward();
+                poseHandler.PoseHandler::Forward();
             }
         }
         if (poseHandler.IsReverse()) {
+            if(poseHandler.IsBus()){
+                poseHandler.Backward();
+                poseHandler.Backward();
+            }
             poseHandler.TurnRight();
+            if (poseHandler.IsSportscar())
+                poseHandler.Backward();
         } else {
             poseHandler.TurnLeft();
         }
+
     }
 };
 
@@ -53,16 +60,23 @@ public:
     {
         if (poseHandler.IsFast()) {
             if (poseHandler.IsReverse()) {
-                poseHandler.Backward();
+                poseHandler.PoseHandler::Backward();
             } else {
-                poseHandler.Forward();
+                poseHandler.PoseHandler::Forward();
             }
         }
         if (poseHandler.IsReverse()) {
+            if (poseHandler.IsBus()) {
+                poseHandler.Backward();
+                poseHandler.Backward();
+            }
             poseHandler.TurnLeft();
+            if (poseHandler.IsSportscar())
+                poseHandler.Backward();
         } else {
             poseHandler.TurnRight();
         }
+
     }
 };
 

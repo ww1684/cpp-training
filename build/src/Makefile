@@ -184,6 +184,30 @@ training/fast:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
 .PHONY : training/fast
 
+CmderFactory.obj: CmderFactory.cpp.obj
+.PHONY : CmderFactory.obj
+
+# target to build an object file
+CmderFactory.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/CmderFactory.cpp.obj
+.PHONY : CmderFactory.cpp.obj
+
+CmderFactory.i: CmderFactory.cpp.i
+.PHONY : CmderFactory.i
+
+# target to preprocess a source file
+CmderFactory.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/CmderFactory.cpp.i
+.PHONY : CmderFactory.cpp.i
+
+CmderFactory.s: CmderFactory.cpp.s
+.PHONY : CmderFactory.s
+
+# target to generate assembly for a file
+CmderFactory.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/CmderFactory.cpp.s
+.PHONY : CmderFactory.cpp.s
+
 ExecutorImpl.obj: ExecutorImpl.cpp.obj
 .PHONY : ExecutorImpl.obj
 
@@ -246,6 +270,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training
+	@echo ... CmderFactory.obj
+	@echo ... CmderFactory.i
+	@echo ... CmderFactory.s
 	@echo ... ExecutorImpl.obj
 	@echo ... ExecutorImpl.i
 	@echo ... ExecutorImpl.s

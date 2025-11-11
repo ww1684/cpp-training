@@ -184,6 +184,30 @@ training_main/fast:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/build
 .PHONY : training_main/fast
 
+BusTest.obj: BusTest.cpp.obj
+.PHONY : BusTest.obj
+
+# target to build an object file
+BusTest.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/BusTest.cpp.obj
+.PHONY : BusTest.cpp.obj
+
+BusTest.i: BusTest.cpp.i
+.PHONY : BusTest.i
+
+# target to preprocess a source file
+BusTest.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/BusTest.cpp.i
+.PHONY : BusTest.cpp.i
+
+BusTest.s: BusTest.cpp.s
+.PHONY : BusTest.s
+
+# target to generate assembly for a file
+BusTest.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/BusTest.cpp.s
+.PHONY : BusTest.cpp.s
+
 ExecutorFastTest.obj: ExecutorFastTest.cpp.obj
 .PHONY : ExecutorFastTest.obj
 
@@ -207,6 +231,30 @@ ExecutorFastTest.s: ExecutorFastTest.cpp.s
 ExecutorFastTest.cpp.s:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.s
 .PHONY : ExecutorFastTest.cpp.s
+
+ExecutorReverseTest.obj: ExecutorReverseTest.cpp.obj
+.PHONY : ExecutorReverseTest.obj
+
+# target to build an object file
+ExecutorReverseTest.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorReverseTest.cpp.obj
+.PHONY : ExecutorReverseTest.cpp.obj
+
+ExecutorReverseTest.i: ExecutorReverseTest.cpp.i
+.PHONY : ExecutorReverseTest.i
+
+# target to preprocess a source file
+ExecutorReverseTest.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorReverseTest.cpp.i
+.PHONY : ExecutorReverseTest.cpp.i
+
+ExecutorReverseTest.s: ExecutorReverseTest.cpp.s
+.PHONY : ExecutorReverseTest.s
+
+# target to generate assembly for a file
+ExecutorReverseTest.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorReverseTest.cpp.s
+.PHONY : ExecutorReverseTest.cpp.s
 
 ExecutorTest.obj: ExecutorTest.cpp.obj
 .PHONY : ExecutorTest.obj
@@ -256,6 +304,30 @@ PoseEq.cpp.s:
 	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PoseEq.cpp.s
 .PHONY : PoseEq.cpp.s
 
+SportscarTest.obj: SportscarTest.cpp.obj
+.PHONY : SportscarTest.obj
+
+# target to build an object file
+SportscarTest.cpp.obj:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/SportscarTest.cpp.obj
+.PHONY : SportscarTest.cpp.obj
+
+SportscarTest.i: SportscarTest.cpp.i
+.PHONY : SportscarTest.i
+
+# target to preprocess a source file
+SportscarTest.cpp.i:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/SportscarTest.cpp.i
+.PHONY : SportscarTest.cpp.i
+
+SportscarTest.s: SportscarTest.cpp.s
+.PHONY : SportscarTest.s
+
+# target to generate assembly for a file
+SportscarTest.cpp.s:
+	cd /d C:\workspace\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/SportscarTest.cpp.s
+.PHONY : SportscarTest.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -270,15 +342,24 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training_main
+	@echo ... BusTest.obj
+	@echo ... BusTest.i
+	@echo ... BusTest.s
 	@echo ... ExecutorFastTest.obj
 	@echo ... ExecutorFastTest.i
 	@echo ... ExecutorFastTest.s
+	@echo ... ExecutorReverseTest.obj
+	@echo ... ExecutorReverseTest.i
+	@echo ... ExecutorReverseTest.s
 	@echo ... ExecutorTest.obj
 	@echo ... ExecutorTest.i
 	@echo ... ExecutorTest.s
 	@echo ... PoseEq.obj
 	@echo ... PoseEq.i
 	@echo ... PoseEq.s
+	@echo ... SportscarTest.obj
+	@echo ... SportscarTest.i
+	@echo ... SportscarTest.s
 .PHONY : help
 
 

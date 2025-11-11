@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/training.dir/CmderFactory.cpp.obj"
+  "CMakeFiles/training.dir/CmderFactory.cpp.obj.d"
   "CMakeFiles/training.dir/ExecutorImpl.cpp.obj"
   "CMakeFiles/training.dir/ExecutorImpl.cpp.obj.d"
   "CMakeFiles/training.dir/PoseHandler.cpp.obj"
